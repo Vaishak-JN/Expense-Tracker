@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpenses/NewExpense";
+
+
 function App() {
-
-
 
   const DummyExpenses = [
     {
