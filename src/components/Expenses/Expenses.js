@@ -4,6 +4,7 @@ import Card from "../UI/Card";
 import ExpensesFilter from "./ExpenseFilter";
 import { useState } from "react";
 import ExpensesList from "./ExpensesList";
+import ExpenseChart from "./ExpenseChart";
 
 function Expenses({ expenses }) {
 
@@ -26,6 +27,8 @@ function Expenses({ expenses }) {
     return (
         <Card className="expenses">
             <ExpensesFilter selectedYear={filteredYear} onChangeFilter={filterChangeHandler} />
+
+            <ExpenseChart expenses={filteredExpensesByYear} />
 
             {/* {filteredExpensesByYear.map(expense => <ExpenseItem key={expense.id} title={expense.title} amount={expense.amount} date={expense.date} />)} */}
 
